@@ -25,10 +25,7 @@ cd <your-repo-name>
 
 bash
 python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
+
 Install dependencies:
 
 bash
@@ -53,6 +50,7 @@ Read frames in a loop, convert to grayscale, run detectMultiScale, draw rectangl
 If your script supports image input:
 bash
 python face_detection.py --image path/to/image.jpg
+
 Behavior:
 Loads the image from the path.
 Converts to grayscale and runs face detection.
@@ -68,9 +66,3 @@ Add support for saving detected frames or cropped face images.
 Extend the project to detect eyes or smiles using additional Haar Cascades.​
 Integrate with a face recognition pipeline for user identification.​
 
-Future Improvements
-Add a simple GUI for starting and stopping detection.
-
-Support for recording detections to a file (video or image sequence).
-
-Add unit tests and CI workflow configuration.
